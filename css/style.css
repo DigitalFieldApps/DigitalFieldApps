@@ -100,13 +100,14 @@ address{font-weight: 200}
 /*** Main Content ***/
 
 video {
-	min-width: 100%; 
+	width: 100%; 
     min-height: 100%;
 	position: absolute;
 	top:0;
 	left:0;
 	opacity: 0.6;
 	object-fit:fill;
+	object-fit: cover;
 	-webkit-filter: blur(2px);
   -moz-filter: blur(2px);
   -o-filter: blur(2px);
@@ -187,7 +188,7 @@ video::-webkit-media-controls {
 	position:fixed;
 	top:0;
 	bottom:0;
-	right:40px;
+	right:20px;
 	height:90px;
 	margin:auto;
 	font-size:1.2em;
