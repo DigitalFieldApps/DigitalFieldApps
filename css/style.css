@@ -172,6 +172,8 @@ video::-webkit-media-controls {
 .contact-card a, .contact-card h3{color: #ffffff; }
 
 
+img.team-images{width: 100%;}
+
 @media (max-width: 767.98px) {
 	.block-fullpage {padding-left: 16px;padding-right: 16px;}
 	.disc{ height: 200px; width: 200px; line-height: 200px;}
