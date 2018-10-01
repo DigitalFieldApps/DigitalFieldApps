@@ -183,6 +183,9 @@ img.team-images{width: 100%;}
 	.contact-card{width: 85%;}
 }
 
+@media (max-height: 600px) {
+	.intro-copy {position: relative; margin-top: 160px; padding-bottom: 64px;}
+}
 
 /**pagination**/
 
