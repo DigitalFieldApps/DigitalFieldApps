@@ -181,6 +181,7 @@ img.team-images{width: 100%;}
 	.row.row-style-simple{display: block;}
 	.slider-ourteam, .slider-feedback{padding-top: 64px;}
 	.contact-card{width: 85%;}
+	.grow-image{max-width: 200px; margin: 0 auto; float: none;} 
 }
 
 @media (max-height: 600px) {
