@@ -7,6 +7,8 @@ body{
 	/*font-size:62.5%;*/
 	color: #4A4A4A;
 	font-szie: 100%;
+	
+	word-wrap: break-word; 
 }
 
 .justify-center{float: none; margin: 0 auto;}
@@ -158,9 +160,11 @@ video::-webkit-media-controls {
 
 .block-featured-casestudy {min-height: 100vh; background: #005EB8; color:#ffffff;}
 
+.casestudy-item .display{padding-top: 32px;}
+
 .feature{padding-bottom: 64px;}
 
-.feedback .row{display: block;}
+.feedback .row, .ourteam .row{display: block; padding-bottom: 64px;}
 
 .slider-feedback{padding-top: 128px; padding-bottom: 32px;}
 
@@ -182,6 +186,8 @@ img.team-images{width: 100%;}
 	.slider-ourteam, .slider-feedback{padding-top: 64px;}
 	.contact-card{width: 85%;}
 	.grow-image{max-width: 200px; margin: 0 auto; float: none;} 
+	
+	.casestudy-item .display{padding-top: 64px;}
 }
 
 @media (max-height: 600px) {
@@ -264,6 +270,9 @@ body.statemment .pagination a:after, body.my-day .pagination a:after, body.sonar
 /*.slick-next.slick-arrow{background: red;}
 
 .slick-back.slick-arrow{background: red;}*/
+
+
+
 
 /*needs investigating,  but could qork for vertical elements
 

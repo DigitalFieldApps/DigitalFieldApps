@@ -29,6 +29,23 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/> 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"/>
 	  
+	  
+	  <style>
+ 
+	  .slick-prev{background: #005EB8; display: block; border-radius: 50%; width:48px; height: 48px; bottom: -20px; top: auto;}
+	  .slick-next{background: #005EB8; display: block; border-radius: 50%; width:48px; height: 48px; bottom: -20px; top: auto;}
+	  .slick-prev:hover, .slick-next:hover{background: #0099FF;}
+		  
+		  .slick-dots li button::before{color: #005EB8;}
+		  .slick-dots li.slick-active button:before { opacity: 1; color: #005EB8;}
+		  
+	/*.slick-prev:before{content:'prev'; font-family: 'BGFlame', 'Montserrat', sans-serif; text-align: center; font-size: 14px; opacity: 1;}[dir='rtl'] 
+	.slick-prev:before{content:'prev'}.slick-next{right:-25px}[dir='rtl'] 
+    .slick-next{right:auto;left:-25px}.slick-next:before{content:'next'; font-family: 'BGFlame', 'Montserrat', sans-serif; text-align: center; font-size: 14px; opacity: 1;}[dir='rtl'] 
+	.slick-next:before{content:'next'}*/
+	  
+	  </style>
+	  
 	
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -280,7 +297,7 @@
 	  
 	  
 		<!-- TEAM.-->	  
-		<section class="block-fullpage section" data-section-name="team">
+		<section class="block-fullpage section ourteam" data-section-name="team">
 			<div class="row row-style-simple">
 				
 				<!-- intro section.-->
@@ -289,7 +306,7 @@
 				</div>
 				
 				<!-- team slider container.-->
-				<div class="slider-ourteam offset-md-1 col-md-11" >
+				<div class="slider-ourteam offset-md-1 col-md-10" >
 					
 					<!--team member.-->
 					<div class="col-md-3 block-team-profile">
@@ -374,6 +391,9 @@
 				
 				<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;ackground: red;width:64px;height: 64px;">Next</button>.-->
 				
+				
+				
+				
 				<!--section intro.-->
 				<div class="offset-md-1 col-md-5">
 					<h1 class="display section-title">Feedback</h1>
@@ -381,6 +401,8 @@
 
 				<!-- feedback slider container.-->
 				<div class="slider-feedback offset-md-1 col-md-10" >
+					
+				    	<!--<button type="button" class="slick-prev">Previous</button>.-->
 					
 					<!--feedback 1.-->
 					<div class="col-md-7 feedback-item">
@@ -411,7 +433,7 @@
 			<div class="row align-items-center">
 
 				<!--description.-->
-				<div class="offset-md-1 col-md-4">
+				<div class="offset-md-1 casestudy-item col-md-4">
 					<h1 class="display">My Day</h1>
 					<h3>Potential benefit of £231m</h3>
 					<p class="lead">Enabling engineers to work smarter with their existing technology by delivering the information they need in the palm of their hand</p>
@@ -425,7 +447,7 @@
 	    
 	  
 	  	<!--LOCALZ.-->
-		<section class="block-fullpage section" data-section-name="localz">
+		<section class="block-fullpage section casestudy-item" data-section-name="localz">
 			<div class="row align-items-center">
 				
 				<!--description.-->
@@ -442,7 +464,7 @@
 		</section><!--end section.-->
 		
 	    <!--SONAR.-->
-		<section class="block-fullpage section" data-section-name="sonar">
+		<section class="block-fullpage section casestudy-item" data-section-name="sonar">
 			<div class="row align-items-center">
 
 				<!--description.-->
@@ -462,7 +484,7 @@
 	  
 	  
 	  <!--GROW.-->
-		<section class="block-fullpage section" data-section-name="grow">
+		<section class="block-fullpage section casestudy-item" data-section-name="grow">
 			<div class="row align-items-center">
 				
 				<!--description.-->
@@ -557,6 +579,7 @@
         centerMode: true,
 			centerPadding: '0px',
 			arrows: true,
+			draggable: true,
         slidesToShow: 1,
         slidesToScroll: 1,
   responsive: [
@@ -582,9 +605,12 @@
 });
 		
 $('.slider-ourteam').slick({
-  dots: false,
+  dots: true,
 	centerMode: true,
+	infinite: true,
   centerPadding: '80px',
+	arrows: true,
+			draggable: true,
   slidesToShow: 3,
   responsive: [
     {
