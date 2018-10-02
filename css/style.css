@@ -258,7 +258,12 @@ body.statemment .pagination a:after, body.my-day .pagination a:after, body.sonar
 
 
 
-.feedback-item:hover, .block-team-profile:hover {cursor: grab;}
+.feedback-item:hover, .block-team-profile:hover, .slick-track{cursor: grab;}
+
+
+/*.slick-next.slick-arrow{background: red;}
+
+.slick-back.slick-arrow{background: red;}*/
 
 /*needs investigating,  but could qork for vertical elements
 
