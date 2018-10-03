@@ -7,7 +7,7 @@ body{
 	/*font-size:62.5%;*/
 	color: #4A4A4A;
 	font-szie: 100%;
-	
+	/*word-wrap: normal;*/
 	word-wrap: break-word; 
 }
 
@@ -27,6 +27,7 @@ h1{
 	font-weight: 500;
 	margin-bottom: 32px;
 }
+
 
 h3{
 	/*font-size: 5.3533334em;*/
@@ -96,7 +97,9 @@ address{font-weight: 200}
 	h3{font-size: 20px;}
 	.display-extra-big{font-size: 72px; word-break: normal;}
 	h1.display{font-size:48px;}
-	
+	.branded-bg h1.display {margin-top: 64px;}
+	.contact-card{margin-bottom: 32px;}
+	.grow-image{padding-bottom: 32px;}
 }
 
 /*** Main Content ***/
